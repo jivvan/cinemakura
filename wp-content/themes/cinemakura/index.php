@@ -1,3 +1,3 @@
-<?php get_header()?>
-<h1>Hello world!</h1>
-<?php get_footer()?>
+<?php get_header();?>
+<button type="button" class="btn btn-primary">Primary</button>
+<?php get_footer();?>
