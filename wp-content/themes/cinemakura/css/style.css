@@ -1,3 +1,25 @@
-html {
-  margin-top: 1px !important;
+body {
+  background-color: #f7f7ff;
+  font-family: poppins;
+}
+.navbar {
+  height: 64px;
+  background-image: linear-gradient(to right, #144d79, #279af1);
+}
+.navbar-brand {
+  color: #f7f7ff;
+  font-size: x-large;
+}
+.navbar-brand:hover{
+  color: #f7f7ff;
+}
+.navButton {
+  background-color: #f7f7ff;
+  color: #131112;
+  border-radius: 20px;
+  font-size: small;
+}
+.footerColor{
+  background-color:#60656F;
+  opacity: 50%;
 }
