@@ -4,7 +4,7 @@
 */
 function load_stylesheets(){
 wp_enqueue_style('bootstrap', get_stylesheet_directory_uri().' /css/bootstrap.css');
-wp_enqueue_style('style', get_stylesheet_directory_uri().' /css/style.css');
+wp_enqueue_style('customStylesheet', get_stylesheet_directory_uri().' /css/style.css');
 
 wp_enqueue_script('bootstrap', get_stylesheet_directory_uri().' /js/bootstrap.js');
 

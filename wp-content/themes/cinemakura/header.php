@@ -8,9 +8,12 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<!-- As a heading -->
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Navbar</span>
-  </div>
-</nav>
+<nav class="navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand navTitle" href="#">Cinemaकुरा</a>
+
+        <button type="button" class="btn btn-light ms-auto navButton">
+          Start a discussion
+        </button>
+      </div>
+    </nav>   
