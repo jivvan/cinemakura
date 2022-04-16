@@ -4,7 +4,7 @@
 $args = array(
     'numberposts' => 10,
     'post_type'   => 'movie',
-    'order'       => 'ASC',
+    'order'       => 'DESC',
     'orderby'     => 'release_date'
 );
 $posts = get_posts($args);
