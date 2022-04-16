@@ -18,3 +18,13 @@ function remove_admin_login_header() {
     remove_action('wp_head', '_admin_bar_bump_cb');
 }
 add_action('get_header', 'remove_admin_login_header');
+
+
+/***
+*This function takes in name of image in icons folder and returs url to be used by img tag
+* @param string $imageName Name of image with extension
+* @return string url of image in icons folder
+*/
+function get_icon_url($imageName){
+    return get_stylesheet_directory_uri().'/icons/'.$imageName;
+}
