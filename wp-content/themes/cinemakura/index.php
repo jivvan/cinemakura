@@ -1,6 +1,47 @@
-<?php get_header();?>
+<?php get_header(); ?>
+
+<?php
+$args = array(
+    'numberposts' => 10,
+    'post_type'   => 'movie',
+    'order'       => 'DESC',
+    'orderby'     => 'release_date'
+);
+$posts = get_posts($args);
+?>
 
 <div class="container m-auto">
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cupiditate consectetur vitae deserunt facilis obcaecati dolore rerum eligendi aperiam totam eveniet et sapiente quod exercitationem rem quisquam iste, similique unde quam voluptatem quas! Reiciendis ratione voluptates nam, voluptate illum perspiciatis nihil eius facere sint aperiam voluptas ad fugit possimus, quia ea amet inventore a provident, laudantium accusantium voluptatum earum eos. Vitae facere error asperiores rem dignissimos ut quaerat impedit, aut molestiae nobis, aliquam, at enim. Tempora quidem sapiente sit labore voluptate eligendi reiciendis consequuntur, ipsum eum quos recusandae distinctio dolore. Hic voluptate magni expedita, labore officiis animi odit eius ducimus accusamus. Ut quo labore, velit qui error ipsa dolorem! Debitis ad, dolore quaerat aliquam reiciendis, unde sequi quas magnam ullam sunt nulla, facere veritatis qui impedit recusandae obcaecati vero. Non eos officiis et qui maxime vero similique consequuntur impedit, ullam adipisci soluta possimus veritatis optio velit facilis alias minima iure! Libero suscipit labore nemo maxime architecto laudantium quidem dolorum explicabo reiciendis, dolore ut itaque voluptatibus, dicta delectus unde doloremque commodi quod cum accusamus numquam recusandae reprehenderit, maiores perspiciatis officia. Vero obcaecati necessitatibus excepturi aut sint blanditiis numquam quae, quo ab? Consequuntur illo laudantium facere pariatur, maiores in blanditiis, asperiores velit sint vitae nobis eaque debitis earum amet ipsa a? Modi excepturi, similique nisi nesciunt laborum magni quasi ut quod dignissimos repellat molestias cumque, nemo doloremque libero dolorem maiores corporis voluptates, porro temporibus a facere aliquam et quos? Perferendis est, labore iusto impedit dolore quibusdam laudantium repudiandae beatae aliquam fugiat vitae harum, quam eligendi quasi suscipit laboriosam neque nostrum hic atque quae dicta. Consequatur aspernatur, optio explicabo assumenda molestias, harum, itaque odit exercitationem est necessitatibus laboriosam autem amet. Harum nam amet ea quidem cumque doloribus vero labore, vel unde, hic culpa aut repudiandae! Illo consectetur voluptas nihil vel animi laborum, fugit, laudantium, doloremque debitis officia deleniti. Tenetur placeat eligendi neque voluptatibus, minus autem illo perspiciatis aspernatur suscipit cumque itaque, magni sequi mollitia officia veritatis! Optio expedita debitis distinctio omnis quod alias soluta quae quisquam unde, ad autem commodi et atque dolorem, iusto placeat sit. Est consequatur sint quisquam beatae odio exercitationem voluptates, deleniti qui totam rem, velit molestias cum impedit in enim facere sed hic quos quibusdam ex similique officiis asperiores, quo soluta! Maiores laboriosam earum consectetur voluptas nemo. Incidunt ex at sapiente blanditiis, cupiditate adipisci est magnam nemo quo exercitationem inventore ipsum id expedita, voluptatum tempora iure consequuntur quam itaque perspiciatis eligendi, rerum vitae veritatis enim? Iste mollitia, quis repudiandae ea suscipit est. Recusandae, itaque. Mollitia adipisci dolore repellat voluptas fugiat tempore quibusdam, soluta impedit nobis odit totam doloribus sed, fugit architecto inventore molestiae unde et consectetur assumenda nesciunt rem vitae excepturi obcaecati quaerat. Natus labore obcaecati similique repudiandae tenetur eos quas veritatis, earum itaque voluptate perspiciatis aliquid quia saepe libero ex ullam ipsam distinctio cumque quisquam ab vel. Ullam molestiae eius beatae porro libero, sit magnam dolore non consequatur necessitatibus enim temporibus repellendus consectetur fugiat ad illum asperiores earum iusto nihil odio tenetur nemo. Veniam nihil repellendus doloremque quasi aspernatur hic, magnam dolorum perferendis sint ab. Sapiente minima quo aperiam saepe, laudantium dolorem magnam, ipsum quaerat libero laboriosam nihil voluptatem provident dolor eum animi blanditiis voluptate rerum dolores porro corporis, error rem cupiditate. Ipsam placeat assumenda laudantium eos suscipit harum quam enim esse qui dolores, nobis dolore reiciendis sunt similique ut mollitia id autem repellendus dignissimos nesciunt iure iste. Dignissimos at praesentium magnam, non accusamus ullam officiis placeat pariatur eos odio! Unde blanditiis repellendus quidem voluptates repudiandae? Unde, nostrum natus! Quos quas at ea corrupti hic odit facilis voluptatibus enim voluptas iste natus labore sint vel, dicta, ad eaque esse optio. Repudiandae laboriosam doloribus quae non necessitatibus exercitationem provident tenetur laudantium dolore impedit amet sed, distinctio, perspiciatis, consequatur minus nesciunt sunt totam dignissimos quisquam facere officia eos enim. Eos ipsa blanditiis laudantium, nam rem voluptates dignissimos quam minus alias magnam odio qui exercitationem aliquam iusto voluptas possimus labore, eum ullam esse! Qui labore illo maxime voluptas, illum nisi porro tempore quibusdam sint ipsa vitae cum dignissimos consequuntur, exercitationem inventore ab corrupti sequi animi alias iste. Facilis, ex, ut eveniet accusamus dolor amet magni deserunt fugiat cum architecto, dignissimos illum inventore nihil. Hic ullam facere quas ex deleniti provident quod odit, esse ducimus neque tenetur? Veniam est autem explicabo, odio inventore rerum a tenetur et similique voluptas reprehenderit ea consectetur, quidem dolorum? Tempora dolor fugiat eligendi non repellendus consectetur doloremque. In ducimus soluta incidunt corrupti laudantium maiores animi aliquam at sed, voluptatum officia vero error vel ipsam sapiente dolor quaerat, veniam asperiores, ad molestiae architecto necessitatibus doloremque tempore iure? Esse vero cupiditate vitae magni temporibus maxime ipsum doloremque obcaecati consectetur veritatis eos velit, nihil porro incidunt possimus commodi quia, fuga corrupti unde assumenda eaque, maiores dolor? Fuga, harum amet accusamus quas dicta laboriosam facere odit nesciunt architecto blanditiis, repudiandae aperiam reprehenderit impedit inventore. Aliquid suscipit nulla aliquam dolorum laboriosam numquam nihil optio minus incidunt ut eaque corrupti eveniet cum accusantium error, reprehenderit earum totam, veniam quia labore nesciunt in quae! Aperiam vel deserunt vero quia repellendus nesciunt tenetur placeat minima repellat consectetur! Aliquam maiores mollitia ipsa, ratione consequatur quas? Sed dicta voluptas temporibus optio voluptatibus accusamus? Aliquam nemo veniam quas? Commodi vitae soluta voluptate laudantium non. Ipsa ducimus iure deserunt ad et adipisci molestias, quo incidunt voluptatibus quis sed eos quidem quas. Nobis vel tempore minima aut ipsam dolor earum laborum in consectetur, iure esse ipsum quam repellat fugiat similique ut natus ea! Voluptas, a ut repellat adipisci nulla necessitatibus sed natus consectetur? Sunt pariatur vel at libero temporibus atque, sint corrupti ad quaerat repellendus. Nobis provident temporibus eius! Aliquam quos provident tempore magni culpa facilis sequi, nesciunt odit? Enim nulla impedit reiciendis laboriosam ducimus excepturi aut dignissimos voluptas, optio omnis dolor. Incidunt molestiae expedita commodi aliquid similique assumenda sapiente debitis id in numquam dolores nihil libero non quos et delectus alias minima nemo obcaecati labore, facilis neque sequi repellendus! Deleniti nesciunt pariatur iure delectus omnis incidunt laborum molestiae provident quis odit aliquam, velit, ipsa architecto reprehenderit ratione. Quo, maiores!
+    <!-- TODO: create and style search bar -->
+
+    <!-- Search bar Rayan le garda thik hola! -->
+
+    <!-- TODO: create and style movie carousal -->
+    <div class="d-flex flex-row justify-content-start">
+        <?php if ($posts) {
+            foreach ($posts as $post) :
+            setup_postdata($post); ?>
+            <?php
+            $movie_name = get_post_meta(get_the_ID(), 'movie_name', true);
+            $release_date =  get_post_meta(get_the_ID(), 'release_date', true);
+            $poster =  get_post_meta(get_the_ID(), 'poster', true);
+            ?>
+            <a href="<?php the_permalink(); ?>">
+            <div>
+                <div class="w-25">
+                    <?php echo pods_image($poster, 'default'); ?>
+                </div>
+                <p><?php echo $movie_name; ?></p>
+            </div>
+            </a>
+            <?php the_content(); ?>
+            <?php
+        endforeach;
+        wp_reset_postdata();
+    }
+    ?>
 </div>
-<?php get_footer();?>
+    <!-- movie carousal Sandesh le garda thik hola! Maile halka setup gardya chhu -->
+    
+    <!-- TODO: create and style discussion board -->
+</div>
+<?php get_footer(); ?>
