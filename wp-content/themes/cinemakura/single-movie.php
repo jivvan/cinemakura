@@ -4,10 +4,12 @@
 
     The movie post type is:
     movie_name: string
+    synopsis: string
     release_date: date
     director: string
     dop: string
     cast: string
+    poster: image
  -->
 
 <?php get_header(); ?>
