@@ -1,16 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package cinemakura
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cinemakura</title>
-    <?php wp_head(); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<?php wp_head(); ?>
 </head>
-<body>
-<nav class="navbar sticky-top">
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cinemakura' ); ?></a>
+
+	<nav class="navbar sticky-top">
       <div class="container">
-        <a class="navbar-brand navTitle" href="#">Cinemaकुरा</a>
+        <a class="navbar-brand navTitle" href="/cinemakura">Cinemaकुरा</a>
 
         <button type="button" class="btn btn-light ms-auto navButton">
           Start a discussion

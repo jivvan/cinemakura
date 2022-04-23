@@ -12,7 +12,7 @@
     poster: image
  -->
 
- <?php get_header(); ?>
+<?php get_header(); ?>
 <?php $movie_name =  get_post_custom_values('movie_name')[0];
 $synopsis = get_post_custom_values('synopsis')[0];
 $director =  get_post_custom_values('director')[0];
