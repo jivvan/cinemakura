@@ -8,28 +8,22 @@
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			cinemakura_posted_on();
-			cinemakura_posted_by();
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <header class="entry-header">
+            <?php if ( 'movie' === get_post_type() ) : ?>
+                <a href=<?php echo get_permalink();?>>
+                <div class="movie_card w-25">
+                    <?php
+            $movie_name =  get_post_custom_values('movie_name')[0];
+            $release_date =  get_post_custom_values('release_date')[0];
+            $poster =  get_post_custom_values('poster')[0];
 			?>
+            <h2><?php echo $movie_name?></h2>
+            <div class="w-90">
+                <?php echo pods_image($poster, 'default'); ?>
+            </div>
+            </a>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php cinemakura_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php cinemakura_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

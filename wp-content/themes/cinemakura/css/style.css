@@ -1,11 +1,15 @@
 /* declaring css variables */
 :root {
-  --white_text: #f7f7ff;
+  --white: #f7f7ff;
+  --light_brown: #c49991;
+  --blue: #279af1;
+  --gray: #60656f;
+  --dark_gray: #131112;
 }
 
 /* customizing html elements */
 body {
-  background-color: var(--white_text);
+  background-color: var(--white);
   font-family: poppins;
 }
 
@@ -15,23 +19,50 @@ body {
   background-image: linear-gradient(to right, #144d79, #279af1);
 }
 .navbar-brand {
-  color: #f7f7ff;
+  color: var(--white);
   font-size: x-large;
 }
 .navbar-brand:hover {
-  color: #f7f7ff;
+  color: var(--white);
 }
 
 .navbar-brand:visited {
-  color: #f7f7ff;
+  color: var(--white);
 }
 .navButton {
-  background-color: #f7f7ff;
-  color: #131112;
+  background-color: var(--white);
+  color: var(--dark_gray);
   border-radius: 20px;
   font-size: small;
 }
 .footerColor {
-  background-color: #60656f;
+  background-color: var(--gray);
   opacity: 50%;
+}
+
+.movie_card {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  margin: auto;
+}
+
+/* search bar related styles */
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+/* util classes */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

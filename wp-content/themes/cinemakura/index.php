@@ -17,6 +17,7 @@ get_header();
 
 
 
+
 <?php
 $args = array(
     'numberposts' => 10,
@@ -29,11 +30,11 @@ $posts = get_posts($args);
 
 <div class="container m-auto">
     <!-- TODO: create and style search bar -->
-
+    <?php get_template_part( 'template-parts/search_bar'); ?>
     <!-- Search bar Rayan le garda thik hola! -->
 
     <!-- TODO: create and style movie carousal -->
-    <div class="d-flex pt-4 flex-row justify-content-start">
+    <div class="d-flex pt-5 flex-row justify-content-start">
         <?php if ($posts) {
             foreach ($posts as $post) :
             setup_postdata($post); ?>
