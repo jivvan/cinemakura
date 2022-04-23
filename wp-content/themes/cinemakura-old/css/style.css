@@ -1,15 +1,7 @@
-/* declaring css variables */
-:root {
-  --white_text: #f7f7ff;
-}
-
-/* customizing html elements */
 body {
-  background-color: var(--white_text);
+  background-color: #f7f7ff;
   font-family: poppins;
 }
-
-/* class customizations */
 .navbar {
   height: 64px;
   background-image: linear-gradient(to right, #144d79, #279af1);
@@ -18,11 +10,7 @@ body {
   color: #f7f7ff;
   font-size: x-large;
 }
-.navbar-brand:hover {
-  color: #f7f7ff;
-}
-
-.navbar-brand:visited {
+.navbar-brand:hover{
   color: #f7f7ff;
 }
 .navButton {
@@ -31,7 +19,7 @@ body {
   border-radius: 20px;
   font-size: small;
 }
-.footerColor {
-  background-color: #60656f;
+.footerColor{
+  background-color:#60656F;
   opacity: 50%;
 }

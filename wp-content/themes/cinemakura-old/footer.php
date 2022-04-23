@@ -1,15 +1,3 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package cinemakura
- */
-
-?>
 <!-- Footer -->
 <footer class="footerColor text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
@@ -115,9 +103,5 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
 </body>
 </html>
