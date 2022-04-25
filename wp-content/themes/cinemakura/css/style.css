@@ -28,10 +28,10 @@ body {
 .navButton {
   background-color: #f7f7ff;
   color: #131112;
-  border-radius: 20px;
-  font-size: small;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
 .footerColor {
   background-color: #60656f;
-  opacity: 50%;
+  
 }

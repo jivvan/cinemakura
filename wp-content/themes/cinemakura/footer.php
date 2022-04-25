@@ -24,18 +24,18 @@
 
     <!-- Right -->
     <div>
-      <a href="" class="me-4 text-reset">
+      
       <img src="<?php echo get_icon_url('facebook.png');?>" alt="facebook">
-      </a>
-      <a href="" class="me-4 text-reset">
+      
+      
       <img src="<?php echo get_icon_url('twitter.png'); ?>" alt="twitter">
-       </a>
-      <a href="" class="me-4 text-reset">
+      
+      
       <img src="<?php echo get_icon_url('instagram.png'); ?>" alt="instagram">
-      </a>
-      <a href="" class="me-4 text-reset">
+      
+      
          <img src="<?php echo get_icon_url('github.png'); ?>" alt="github">
-      </a>
+      
     </div>
 
     <!-- Right -->

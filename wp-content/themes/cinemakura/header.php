@@ -29,7 +29,7 @@
       <div class="container">
         <a class="navbar-brand navTitle" href="/cinemakura">Cinemaकुरा</a>
 
-        <button type="button" class="btn btn-light ms-auto navButton">
+        <button type="button" class="navButton">
           Start a discussion
         </button>
       </div>

@@ -50,7 +50,6 @@ $posts = get_posts($args);
                 <p><?php echo $movie_name; ?></p>
             </div>
             </a>
-            <?php the_content(); ?>
             <?php
         endforeach;
         wp_reset_postdata();
