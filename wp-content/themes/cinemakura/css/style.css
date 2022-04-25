@@ -45,7 +45,7 @@ body {
   padding: 1rem;
   background-color: var(--white);
   border-radius: 1rem;
-  margin: auto;
+  max-width: 15rem;
 }
 
 /* search bar related styles */
@@ -60,6 +60,15 @@ body {
   outline: none;
   box-shadow: none;
 }
+
+/* container for showing search results */
+.search-container {
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
 /* util classes */
 .center-content {
   display: flex;
