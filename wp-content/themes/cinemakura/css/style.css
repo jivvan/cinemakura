@@ -37,7 +37,6 @@ body {
 }
 .footerColor {
   background-color: var(--gray);
-  opacity: 50%;
 }
 
 .movie_card {

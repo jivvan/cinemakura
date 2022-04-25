@@ -24,25 +24,20 @@
 
     <!-- Right -->
     <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fa fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
+      
+      <img src="<?php echo get_icon_url('facebook.png');?>" alt="facebook">
+      
+      
+      <img src="<?php echo get_icon_url('twitter.png'); ?>" alt="twitter">
+      
+      
+      <img src="<?php echo get_icon_url('instagram.png'); ?>" alt="instagram">
+      
+      
+         <img src="<?php echo get_icon_url('github.png'); ?>" alt="github">
+      
     </div>
+
     <!-- Right -->
   </section>
   <!-- Section: Social media -->

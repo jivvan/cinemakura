@@ -183,3 +183,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**icons */
+function get_icon_url($imageName){
+    return get_stylesheet_directory_uri().'/icons/'.$imageName;
+} 
