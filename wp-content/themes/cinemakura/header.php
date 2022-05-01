@@ -29,8 +29,10 @@
       <div class="container">
         <a class="navbar-brand navTitle" href="/cinemakura">Cinemaकुरा</a>
 
-        <button type="button" class="navButton">
-          Start a discussion
-        </button>
+        <a href="/cinemakura/create-discussion">
+            <button type="button" class="navButton">
+                Start a discussion
+            </button>
+        </a>
       </div>
     </nav>   
