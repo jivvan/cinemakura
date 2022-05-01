@@ -114,4 +114,29 @@ body {
   color: #c59b08;
 }
 
-/* rating related style */
+/* ~rating related style */
+
+/* discussion card related style */
+.discussion-card {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 1rem;
+  color: var(--dark_gray);
+}
+
+.discussion-card > div {
+  display: flex;
+  align-items: baseline;
+}
+.inline {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.author-name {
+  font-weight: 400;
+  font-size: large;
+  margin-left: 1rem;
+}
+/* ~discussion card related style */
