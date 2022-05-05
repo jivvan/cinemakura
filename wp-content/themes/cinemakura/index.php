@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -27,41 +28,20 @@ $args = array(
 );
 $posts = get_posts($args);
 ?>
+<!-- TODO: create and style search bar -->
+<?php get_template_part('template-parts/search_bar'); ?>
+<!-- Search bar Rayan le garda thik hola! -->
 
-<div class="container m-auto">
-    <!-- TODO: create and style search bar -->
-    <?php get_template_part( 'template-parts/search_bar'); ?>
-    <!-- Search bar Rayan le garda thik hola! -->
+<!-- TODO: create and style movie carousal -->
+<div class="d-flex pt-5 flex-row justify-content-start">
+    <?php get_template_part('template-parts/carousel'); ?>
+</div>
+<!-- movie carousal Sandesh le garda thik hola! Maile halka setup gardya chhu -->
 
-    <!-- TODO: create and style movie carousal -->
-    <div class="d-flex pt-5 flex-row justify-content-start">
-        <?php if ($posts) {
-            foreach ($posts as $post) :
-            setup_postdata($post); ?>
-            <?php
-            $movie_name = get_post_meta(get_the_ID(), 'movie_name', true);
-            $release_date =  get_post_meta(get_the_ID(), 'release_date', true);
-            $poster =  get_post_meta(get_the_ID(), 'poster', true);
-            ?>
-            <a href="<?php the_permalink(); ?>">
-            <div>
-                <div class="w-25">
-                    <?php echo pods_image($poster, 'default'); ?>
-                </div>
-                <p><?php echo $movie_name; ?></p>
-            </div>
-            </a>
-            <?php
-        endforeach;
-        wp_reset_postdata();
-    }
-    ?>
+<!-- TODO: create and style discussion board -->
 </div>
-    <!-- movie carousal Sandesh le garda thik hola! Maile halka setup gardya chhu -->
-    
-    <!-- TODO: create and style discussion board -->
-</div>
-	
+
 <?php
 get_sidebar();
 get_footer();
+?>
