@@ -28,21 +28,18 @@
         height: 300px;
         object-fit: contain;
     }
-
-    @media only screen and (max-width: 600px) {
-        #image-carousel {
-            width: 50%;
-        }
-    }
 </style>
 <script>
     new Splide('#image-carousel', {
         type: 'loop',
         perPage: 5,
         breakpoints: {
-            640: {
-                perPage: 1,
+            1100: {
+                perPage: 3,
             },
+            600: {
+                perPage: 1,
+            }
         },
     }).mount();
 </script>
