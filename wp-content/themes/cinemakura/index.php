@@ -29,10 +29,10 @@ $args = array(
 $posts = get_posts($args);
 ?>
 
-<div class="container m-auto">
+<div class="container m-auto mb-4">
     <!-- TODO: create and style search bar -->
     <?php get_template_part('template-parts/search_bar'); ?>
-    
+
     <div class="d-flex pt-5 flex-row justify-content-start">
         <?php get_template_part('template-parts/carousel'); ?>
     </div>
@@ -46,34 +46,18 @@ $posts = get_posts($args);
     ?>
 
 
+    <hr>
     <!--post starts here(top discussion) -->
     <div class="heading1">
         <h3><i>Top discussions</i></h3>
     </div>
-    <div class="main container flex-column m-auto">
-
+    <div class="container flex-column m-auto">
         <?php if ($posts) {
             foreach ($posts as $post) :
-                setup_postdata($post); ?>
-                <?php
+                setup_postdata($post);
 
-                $heading = get_post_meta(get_the_ID(), 'heading', true);
-                $description = get_post_meta(get_the_ID(), 'description', true);
+                get_template_part('template-parts/discussion-card'); ?>
 
-
-                ?>
-                <a class="link" href="<?php the_permalink(); ?>">
-
-                    <div class="flex_item top_discussion">
-                        <div class="title">
-                            <h2> <?php echo $heading ?></h2>
-                        </div>
-                        <div class="descri">
-                            <?php echo $description ?>
-                        </div>
-                        <button type="button" class="discussion_button">View Discussion</button>
-                    </div>
-                </a>
         <?php
             endforeach;
             wp_reset_postdata();
@@ -83,3 +67,11 @@ $posts = get_posts($args);
 </div>
 <?php
 get_footer();
+?>
+
+
+<?php
+
+$heading = get_post_meta(get_the_ID(), 'heading', true);
+$description = get_post_meta(get_the_ID(), 'description', true);
+?>
