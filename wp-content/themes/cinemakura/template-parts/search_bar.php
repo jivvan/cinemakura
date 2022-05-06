@@ -11,7 +11,7 @@
 </div> -->
 <div class="row justify-content-center mt-5">
                         <div class="col-12 col-md-10 col-lg-8">
-                            <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' );?>" class="card card-sm">
+                            <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' );?>" class="card-sm">
                                 <div class="card-body row no-gutters align-items-center">
                                     <div class="col-auto">
                                         <i class="fas fa-search h4 text-body"></i>

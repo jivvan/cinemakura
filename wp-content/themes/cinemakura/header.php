@@ -29,7 +29,7 @@
       <div class="container">
         <a class="navbar-brand navTitle" href="/cinemakura">Cinemaकुरा</a>
         
-        <a href="http://localhost/cinemakura/login/">
+        <a href="/cinemakura/login/">
             <button type="button" class="login">
                 Login
             </button>

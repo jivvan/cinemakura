@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -30,88 +31,55 @@ $posts = get_posts($args);
 
 <div class="container m-auto">
     <!-- TODO: create and style search bar -->
-    <?php get_template_part( 'template-parts/search_bar'); ?>
-    <!-- Search bar Rayan le garda thik hola! -->
-
-    <!-- TODO: create and style movie carousal -->
+    <?php get_template_part('template-parts/search_bar'); ?>
+    
     <div class="d-flex pt-5 flex-row justify-content-start">
+        <?php get_template_part('template-parts/carousel'); ?>
+    </div>
+
+    <?php
+    $args = array(
+        'numberposts' => 10,
+        'post_type'   => 'discussion',
+    );
+    $posts = get_posts($args);
+    ?>
+
+
+    <!--post starts here(top discussion) -->
+    <div class="heading1">
+        <h3><i>Top discussions</i></h3>
+    </div>
+    <div class="main container flex-column m-auto">
+
         <?php if ($posts) {
             foreach ($posts as $post) :
-            setup_postdata($post); ?>
-            <?php
-            $movie_name = get_post_meta(get_the_ID(), 'movie_name', true);
-            $release_date =  get_post_meta(get_the_ID(), 'release_date', true);
-            $poster =  get_post_meta(get_the_ID(), 'poster', true);
-            ?>
-            <a href="<?php the_permalink(); ?>">
-            <div>
-                <div class="w-25">
-                    <?php echo pods_image($poster, 'default'); ?>
-                </div>
-                <p><?php echo $movie_name; ?></p>
-            </div>
-            </a>
-            <?php
-        endforeach;
-        wp_reset_postdata();
+                setup_postdata($post); ?>
+                <?php
 
-     }
-     ?>
+                $heading = get_post_meta(get_the_ID(), 'heading', true);
+                $description = get_post_meta(get_the_ID(), 'description', true);
+
+
+                ?>
+                <a class="link" href="<?php the_permalink(); ?>">
+
+                    <div class="flex_item top_discussion">
+                        <div class="title">
+                            <h2> <?php echo $heading ?></h2>
+                        </div>
+                        <div class="descri">
+                            <?php echo $description ?>
+                        </div>
+                        <button type="button" class="discussion_button">View Discussion</button>
+                    </div>
+                </a>
+        <?php
+            endforeach;
+            wp_reset_postdata();
+        }
+        ?>
     </div>
 </div>
-
 <?php
-$args = array(
-    'numberposts' => 10,
-    'post_type'   => 'discussion',
-);
-$posts = get_posts($args);
-?>
-
- <!--post starts here(top discussion) -->
- <div class="heading1">
- <h3><i>Top discussions</i></h3>
- </div>
-<div class="main container flex-column m-auto">
-
-        <?php if ($posts) {
-            foreach ($posts as $post) :
-            setup_postdata($post); ?>
-            <?php
-           
-            $heading = get_post_meta(get_the_ID(), 'heading', true);
-            $description = get_post_meta(get_the_ID(),'description',true);
-
-            
-            ?>
-            <a class="link" href="<?php the_permalink(); ?>">
-
-        <div class="flex_item top_discussion">
-         <div class="title">
-            <h2>  <?php echo $heading?></h2>
-         </div>
-         <div class="descri">
-            <?php echo $description?>
-         </div>
-         <button type="button" class="discussion_button">View Discussion</button>
-        </div>
-        </a>
-            <?php
-        endforeach;
-        wp_reset_postdata();
-
-    
-     }
-     ?>
-</div>
-wp_get_current_user()
-
-
-
-
-
-
-
-<?php
-
 get_footer();

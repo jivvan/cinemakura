@@ -24,19 +24,20 @@
 
     <!-- Right -->
     <div>
-      
-      <img src="<?php echo get_icon_url('facebook.png');?>" alt="facebook">
-      
-      
-      <img src="<?php echo get_icon_url('twitter.png'); ?>" alt="twitter">
-      
-      
+      <a class="a" href="#">
+        <img src="<?php echo get_icon_url('facebook.png');?>" alt="facebook">
+      </a>
+      <a href="#" class="a">
+        <img src="<?php echo get_icon_url('twitter.png'); ?>" alt="twitter">
+      </a>
+      <a href="#" class="a">
       <img src="<?php echo get_icon_url('instagram.png'); ?>" alt="instagram">
-      
-      
+      </a>
+      <a href="#" class="a">      
          <img src="<?php echo get_icon_url('github.png'); ?>" alt="github">
-      
+      </a>
     </div>
+
 
     <!-- Right -->
   </section>
