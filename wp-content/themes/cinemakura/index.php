@@ -54,14 +54,64 @@ $posts = get_posts($args);
             <?php
         endforeach;
         wp_reset_postdata();
-    }
-    ?>
+
+     }
+     ?>
+    </div>
 </div>
-    <!-- movie carousal Sandesh le garda thik hola! Maile halka setup gardya chhu -->
-    
-    <!-- TODO: create and style discussion board -->
-</div>
-	
+
 <?php
-get_sidebar();
+$args = array(
+    'numberposts' => 10,
+    'post_type'   => 'discussion',
+);
+$posts = get_posts($args);
+?>
+
+ <!--post starts here(top discussion) -->
+ <div class="heading1">
+ <h3><i>Top discussions</i></h3>
+ </div>
+<div class="main container flex-column m-auto">
+
+        <?php if ($posts) {
+            foreach ($posts as $post) :
+            setup_postdata($post); ?>
+            <?php
+           
+            $heading = get_post_meta(get_the_ID(), 'heading', true);
+            $description = get_post_meta(get_the_ID(),'description',true);
+
+            
+            ?>
+            <a class="link" href="<?php the_permalink(); ?>">
+
+        <div class="flex_item top_discussion">
+         <div class="title">
+            <h2>  <?php echo $heading?></h2>
+         </div>
+         <div class="descri">
+            <?php echo $description?>
+         </div>
+         <button type="button" class="discussion_button">View Discussion</button>
+        </div>
+        </a>
+            <?php
+        endforeach;
+        wp_reset_postdata();
+
+    
+     }
+     ?>
+</div>
+wp_get_current_user()
+
+
+
+
+
+
+
+<?php
+
 get_footer();

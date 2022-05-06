@@ -1,142 +1,236 @@
 /* declaring css variables */
+
 :root {
-  --white: #f7f7ff;
-  --light_brown: #c49991;
-  --blue: #279af1;
-  --gray: #60656f;
-  --dark_gray: #131112;
+    --white: #F8F8FF;
+    --light_brown: #c49991;
+    --blue: #279af1;
+    --gray: #60656f;
+    --dark_gray: #131112;
 }
+
 
 /* customizing html elements */
+
 body {
-  background-color: var(--white);
-  font-family: poppins;
+    background-color: var(--white);
+    font-family: poppins;
 }
 
+
 /* class customizations */
+
 .navbar {
-  height: 64px;
-  background-image: linear-gradient(to right, #144d79, #279af1);
+    position: relative;
+    height: 64px;
+    background-image: linear-gradient(to right, #144d79, #279af1);
 }
+
 .navbar-brand {
-  color: var(--white);
-  font-size: x-large;
+    color: var(--white);
+    font-size: x-large;
 }
+
 .navbar-brand:hover {
-  color: var(--white);
+    color: var(--white);
 }
 
 .navbar-brand:visited {
-  color: var(--white);
+    color: var(--white);
 }
+
 .navButton {
-  background-color: var(--white);
-  color: var(--dark_gray);
-  border-radius: 20px;
-  font-size: small;
+    background-color: var(--white);
+    color: var(--dark_gray);
+    border-radius: 20px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.login{
+    
+    font-weight: bold;
+    background-color: var(--white);
+    color: var(--dark_gray);
+    border-radius: 20px;
+    font-size: small;
+    
 }
 .footerColor {
-  background-color: var(--gray);
+    background-color: var(--gray);
 }
 
 .movie_card {
-  cursor: pointer;
-  padding: 1rem;
-  background-color: var(--white);
-  border-radius: 1rem;
-  max-width: 15rem;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    max-width: 15rem;
 }
 
+
 /* search bar related styles */
+
 .form-control-borderless {
-  border: none;
+    border: none;
 }
 
 .form-control-borderless:hover,
 .form-control-borderless:active,
 .form-control-borderless:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
+
 
 /* container for showing search results */
+
 .search-container {
-  padding: 1rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-  display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: flex;
 }
+
 
 /* util classes */
+
 .center-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
 /* rating related style */
+
 .rating-container {
-  display: flex;
+    display: flex;
 }
+
 .rate {
-  height: 46px;
-  padding: 0 10px;
+    height: 46px;
+    padding: 0 10px;
 }
-.rate:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
 }
-.rate:not(:checked) > label {
-  float: right;
-  width: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 30px;
-  color: #ccc;
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
 }
-.rate:not(:checked) > label:before {
-  content: "★ ";
+
+.rate:not(:checked)>label:before {
+    content: "★ ";
 }
-.rate > input:checked ~ label {
-  color: #ffc700;
+
+.rate>input:checked~label {
+    color: #ffc700;
 }
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
 }
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-  color: #c59b08;
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
 }
+
 
 /* ~rating related style */
 
+
 /* discussion card related style */
+
 .discussion-card {
-  background-color: var(--white);
-  border-radius: 20px;
-  padding: 1rem;
-  color: var(--dark_gray);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1rem;
+    color: var(--dark_gray);
 }
 
-.discussion-card > div {
-  display: flex;
-  align-items: baseline;
+.discussion-card>div {
+    display: flex;
+    align-items: baseline;
 }
+
 .inline {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .author-name {
-  font-weight: 400;
-  font-size: large;
-  margin-left: 1rem;
+    font-weight: 400;
+    font-size: large;
+    margin-left: 1rem;
 }
+
+
 /* ~discussion card related style */
+
+.heading1 {
+    padding-left: 80px;
+    margin: 10px;
+}
+
+.main {
+   /* border: 2px solid black;*/
+    display: flex;
+    /*margin: 10px;*/
+}
+
+.top_discussion {
+    position: relative;
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 20px;
+}
+
+.title {
+    padding-left: 51px;
+    padding-top: 25px;
+    color: #131112;
+    
+}
+.link{
+    text-decoration: none;
+    
+}
+
+.descri {
+    padding-left: 51px;
+    padding-top: 10px;
+    color: #60656f;
+}
+
+.discussion_button {
+    position: absolute;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(21,82,179,1) 26%, rgba(0,212,255,1) 100%);
+    border-radius: 20px;
+    font-size: medium;
+    color: #FFFFFF;
+    top: 111px;
+    right: 36px;
+
+
+
+}
