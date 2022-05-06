@@ -28,7 +28,14 @@
 	<nav class="navbar sticky-top">
       <div class="container">
         <a class="navbar-brand navTitle" href="/cinemakura">Cinemaकुरा</a>
+        
+        <a href="/cinemakura/login/">
+            <button type="button" class="login">
+                Login
+            </button>
+        </a>
 
+        
         <a href="/cinemakura/create-discussion">
             <button type="button" class="navButton">
                 Start a discussion
