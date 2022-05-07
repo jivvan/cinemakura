@@ -28,11 +28,11 @@ $poster =  get_post_custom_values('poster')[0];
     </h2>
     <div class="flex space-x-8">
         <div class="flex w-max flex-col justify-center items-center">
-            <div class="max-w-xs">
+            <div class="singleMoviePoster">
                 <?php echo pods_image($poster, 'default'); ?>
             </div>
         </div>
-        <div class="max-w-[70%] flex flex-col space-y-2">
+        <div class="singleMovieContents">
             <p class="bg-slate-300 rounded p-2"><?php echo $synopsis ?></p>
             <p class="font-semibold">Director: <?php echo $director ?></p>
             <p class="font-semibold">Director of Photography (DOP): <?php echo $dop ?></p>
@@ -55,7 +55,7 @@ $poster =  get_post_custom_values('poster')[0];
 
     // The Loop
     if ($the_query->have_posts()) {
-        echo '<h2>Related Discussions</h2>';
+        echo '<h2><br><hr>Related Discussions</h2>';
         while ($the_query->have_posts()) {
             $the_query->the_post();
             get_template_part('template-parts/discussion-card');
