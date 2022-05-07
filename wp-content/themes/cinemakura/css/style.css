@@ -197,3 +197,26 @@ body {
   font-size: medium;
   color: #ffffff;
 }
+
+
+.singleMoviePoster
+{
+  max-height: 300px;
+  max-width: 200px;
+  float: left; border: 1px solid;
+}
+.singleMovieContents
+{
+  text-align: left;
+  width:80%;
+  float: right;
+}
+.discussion-contents
+{
+  text-decoration: none;
+  margin: 1rem;
+}
+.avatar
+{
+  border-radius: 15px;
+}
